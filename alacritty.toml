@@ -24,7 +24,7 @@ padding = { x = 10, y = 10 }
 dynamic_padding = true
 decorations = "full"
 
-[shell]
+[terminal.shell]
 program = "/bin/bash"
 
 [[keyboard.bindings]]
