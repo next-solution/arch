@@ -11,7 +11,7 @@ sudo pacman -S --noconfirm gnome-control-center gnome-terminal nautilus
 
 echo "Enabling GDM..."
 sudo systemctl enable gdm
-sudo systemctl start gdm
+#sudo systemctl start gdm
 
 #echo "Installing NetworkManager..."
 #sudo pacman -S --noconfirm networkmanager
