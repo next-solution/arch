@@ -1,5 +1,8 @@
 # Alacritty Configuration for Development and Git Usage
 
+[font]
+size = 14.0
+
 [colors.primary]
 background = "#282a36"
 foreground = "#f8f8f2"
