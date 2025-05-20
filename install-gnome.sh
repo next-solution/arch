@@ -23,5 +23,6 @@ cd paru
 
 echo "Building and installing Paru..."
 makepkg -si --noconfirm
+rm -rf paru
 
 echo "Installation completed. GNOME and NetworkManager have been successfully configured!"
