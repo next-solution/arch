@@ -23,6 +23,9 @@ cd paru
 
 echo "Building and installing Paru..."
 makepkg -si --noconfirm
+cd..
 rm -rf paru
+echo "alias yay='paru'" >> ~/.bashrc
+source ~/.bashrc
 
 echo "Installation completed. GNOME and NetworkManager have been successfully configured!"
