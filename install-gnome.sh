@@ -11,16 +11,17 @@ sudo pacman -S --noconfirm gnome-control-center gnome-terminal nautilus
 
 echo "Enabling GDM..."
 sudo systemctl enable gdm
-#sudo systemctl start gdm
 
-#echo "Installing NetworkManager..."
-#sudo pacman -S --noconfirm networkmanager
+echo "Installing Dev tools..."
+sudo pacman -S --noconfirm --needed base-devel git
 
-#echo "Enabling NetworkManager..."
-#sudo systemctl enable NetworkManager
-#sudo systemctl start NetworkManager
+echo "Cloning Paru repository..."
+git clone https://aur.archlinux.org/paru.git
 
-#echo "Installing NetworkManager Applet..."
-#sudo pacman -S --noconfirm network-manager-applet
+echo "Entering Paru directory..."
+cd paru
+
+echo "Building and installing Paru..."
+makepkg -si --noconfirm
 
 echo "Installation completed. GNOME and NetworkManager have been successfully configured!"
