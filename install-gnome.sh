@@ -13,14 +13,14 @@ echo "Enabling GDM..."
 sudo systemctl enable gdm
 sudo systemctl start gdm
 
-echo "Installing NetworkManager..."
-sudo pacman -S --noconfirm networkmanager
+#echo "Installing NetworkManager..."
+#sudo pacman -S --noconfirm networkmanager
 
-echo "Enabling NetworkManager..."
-sudo systemctl enable NetworkManager
-sudo systemctl start NetworkManager
+#echo "Enabling NetworkManager..."
+#sudo systemctl enable NetworkManager
+#sudo systemctl start NetworkManager
 
-echo "Installing NetworkManager Applet..."
-sudo pacman -S --noconfirm network-manager-applet
+#echo "Installing NetworkManager Applet..."
+#sudo pacman -S --noconfirm network-manager-applet
 
 echo "Installation completed. GNOME and NetworkManager have been successfully configured!"
