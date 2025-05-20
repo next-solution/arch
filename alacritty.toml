@@ -1,0 +1,38 @@
+# Alacritty Configuration for Development and Git Usage
+
+[font]
+normal = { family = "Fira Code", style = "Regular" }
+size = 14.0
+
+[colors.primary]
+background = "#282a36"
+foreground = "#f8f8f2"
+
+[colors.cursor]
+text = "#282a36"
+cursor = "#f8f8f2"
+
+[colors.selection]
+text = "#f8f8f2"
+background = "#44475a"
+
+[scrolling]
+history = 10000
+
+[window]
+padding = { x = 10, y = 10 }
+dynamic_padding = true
+decorations = "full"
+
+[shell]
+program = "/bin/bash"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Control|Shift"
+action = "SpawnNewInstance"
+
+[[keyboard.bindings]]
+key = "L"
+mods = "Control"
+action = "ClearHistory"
