@@ -1,7 +1,7 @@
 # Alacritty Configuration for Development and Git Usage
 
 [font]
-normal = { family = "Fira Code", style = "Regular" }
+normal = { family = "Hack", style = "Regular" }
 size = 14.0
 
 [colors.primary]
