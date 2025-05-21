@@ -5,7 +5,7 @@ sudo pacman -S --noconfirm wezterm
 sudo pacman -S --noconfirm --needed base-devel git
 
 echo "🛠️ Downloading and installing Oh My Zsh..."
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
 
 echo "🎨 Configuring theme and plugins..."
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/' ~/.zshrc
