@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+cd ~
+
 echo "Installing Dev tools..."
 sudo pacman -S --noconfirm wezterm
 sudo pacman -S --noconfirm --needed base-devel git
