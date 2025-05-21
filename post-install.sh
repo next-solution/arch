@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "Installing Dev tools..."
+sudo pacman -S --noconfirm wezterm
+sudo pacman -S --noconfirm --needed base-devel git
+
 echo "🛠️ Downloading and installing Oh My Zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
