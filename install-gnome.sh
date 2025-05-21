@@ -25,7 +25,7 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 echo "📦 Installing Zsh..."
-pacman -S --noconfirm zsh
+sudo pacman -S --noconfirm zsh
 
 echo "⚙️ Setting Zsh as the default shell..."
 chsh -s $(which zsh)
