@@ -16,14 +16,6 @@ echo "Installing Dev tools..."
 sudo pacman -S --noconfirm wezterm
 sudo pacman -S --noconfirm --needed base-devel git
 
-#!/bin/bash
-
-# Check if the script is running as root
-if [[ $EUID -ne 0 ]]; then
-   echo "Please run the script as root (sudo)." 
-   exit 1
-fi
-
 echo "📦 Installing Zsh..."
 sudo pacman -S --noconfirm zsh
 
