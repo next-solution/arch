@@ -5,5 +5,5 @@ return {
   font_size = 14.0,
   color_scheme = "Dracula",
   enable_tab_bar = true,
-  window_decorations = "RESIZE | TITLE",
+  window_decorations = "RESIZE ",
 }
