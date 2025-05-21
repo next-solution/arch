@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 echo "Installing Dev tools..."
 sudo pacman -S --noconfirm wezterm
