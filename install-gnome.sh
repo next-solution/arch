@@ -25,7 +25,7 @@ chsh -s $(which zsh)
 echo "🔄 Log out and log back in to activate Zsh."
 
 echo "🛠️ Downloading and installing Oh My Zsh..."
-su -c 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"'
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "🎨 Configuring theme and plugins..."
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/' ~/.zshrc
