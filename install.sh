@@ -15,7 +15,11 @@ sudo systemctl enable gdm
 echo "📦 Installing Zsh..."
 sudo pacman -S --noconfirm zsh
 
+echo "Installing fonts..."
+sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+
 echo "Installing Dev tools..."
+sudo pacman -S --noconfirm ttf-firacode-nerd ttf-jetbrains-mono-nerd ttf-hack-nerd ttf-dejavu-nerd ttf-cascadia-code-nerd ttf-ubuntu-mono-nerd
 sudo pacman -S --noconfirm wezterm
 sudo pacman -S --noconfirm --needed base-devel git
 
