@@ -19,7 +19,7 @@ echo "Installing Dev tools..."
 sudo pacman -S --noconfirm wezterm
 sudo pacman -S --noconfirm --needed base-devel git
 
-
+cd ~
 
 echo "Cloning Paru repository..."
 git clone https://aur.archlinux.org/paru.git
@@ -31,8 +31,6 @@ echo "Building and installing Paru..."
 makepkg -si --noconfirm
 cd..
 rm -rf paru
-echo "alias yay='paru'" >> ~/.zshrc
-source ~/.zshrc
 
 paru -S --noconfirm brave-bin
 
