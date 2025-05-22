@@ -3,6 +3,16 @@
 echo "Updating system..."
 sudo pacman -Syu --noconfirm
 
+sudo pacman --noconfirm -S snapper
+sudo pacman --noconfirm -S btrfs-progs
+
+sudo umount /.snapshots
+sudo rm -r /.snapshots
+sudo snapper -c root create-config /
+sudo btrfs subvolume delete /.snapshots
+sudo mkdir /.snapshots
+sudo mount -a
+
 echo "Installing GNOME Shell and GDM..."
 sudo pacman -S --noconfirm gnome-shell gdm
 
