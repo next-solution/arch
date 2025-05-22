@@ -3,6 +3,7 @@
 echo "Updating system..."
 sudo pacman -Syu --noconfirm
 
+echo "Installing snapper..."
 sudo pacman --noconfirm -S snapper
 sudo pacman --noconfirm -S btrfs-progs
 
