@@ -15,9 +15,25 @@ sudo systemctl enable gdm
 echo "📦 Installing Zsh..."
 sudo pacman -S --noconfirm zsh
 
-echo "⚙️ Setting Zsh as the default shell..."
-chsh -s $(which zsh)
+echo "Installing Dev tools..."
+sudo pacman -S --noconfirm wezterm
+sudo pacman -S --noconfirm --needed base-devel git
 
-echo "🔄 Log out and log back in to activate Zsh."
+
+
+echo "Cloning Paru repository..."
+git clone https://aur.archlinux.org/paru.git
+
+echo "Entering Paru directory..."
+cd paru
+
+echo "Building and installing Paru..."
+makepkg -si --noconfirm
+cd..
+rm -rf paru
+echo "alias yay='paru'" >> ~/.zshrc
+source ~/.zshrc
+
+paru -S --noconfirm brave-bin
 
 echo "Installation completed!"
