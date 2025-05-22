@@ -14,6 +14,8 @@ sudo btrfs subvolume delete /.snapshots
 sudo mkdir /.snapshots
 sudo mount -a
 
+sudo pacman --noconfirm -S snap-pac
+
 echo "Installing GNOME Shell and GDM..."
 sudo pacman -S --noconfirm gnome-shell gdm
 
@@ -48,5 +50,14 @@ cd..
 rm -rf paru
 
 paru -S --noconfirm brave-bin
+paru -S --noconfirm snap-pac-grub
+
+CONFIG_FILE="/etc/mkinitcpio.conf"
+HOOKS_KEY="HOOKS=("
+NEW_HOOK="grub-btrfs-overlayfs"
+
+sudo cp "$CONFIG_FILE" "$CONFIG_FILE.bak"
+sudo sed -i "/^$HOOKS_KEY/ s/)/ $NEW_HOOK)/" "$CONFIG_FILE"
+sudo mkinitcpio -P
 
 echo "Installation completed!"
