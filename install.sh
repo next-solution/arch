@@ -25,6 +25,11 @@ sudo pacman -S --noconfirm gnome-control-center nautilus
 echo "Enabling GDM..."
 sudo systemctl enable gdm
 
+echo "Installing Samba"
+sudo pacman -S --noconfirm samba gvfs-smb
+sudo mkdir /etc/samba
+sudo touch /etc/samba/smb.conf
+
 echo "📦 Installing Zsh..."
 sudo pacman -S --noconfirm zsh
 
