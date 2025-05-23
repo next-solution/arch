@@ -56,6 +56,7 @@ rm -rf paru
 
 paru -S --noconfirm brave-bin
 paru -S --noconfirm snap-pac-grub
+paru -S --noconfirm heroic-games-launcher-bin
 
 CONFIG_FILE="/etc/mkinitcpio.conf"
 HOOKS_KEY="HOOKS=("
