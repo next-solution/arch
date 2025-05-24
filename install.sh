@@ -31,7 +31,7 @@ sudo mkdir /etc/samba
 sudo touch /etc/samba/smb.conf
 
 echo "📦 Installing Tools..."
-sudo pacman -S --noconfirm zsh unrar 
+sudo pacman -S --noconfirm zsh p7zip 
 
 echo "Installing fonts..."
 sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
