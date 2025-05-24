@@ -30,8 +30,8 @@ sudo pacman -S --noconfirm samba gvfs-smb
 sudo mkdir /etc/samba
 sudo touch /etc/samba/smb.conf
 
-echo "📦 Installing Zsh..."
-sudo pacman -S --noconfirm zsh
+echo "📦 Installing Tools..."
+sudo pacman -S --noconfirm zsh unrar
 
 echo "Installing fonts..."
 sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
