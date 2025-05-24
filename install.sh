@@ -20,7 +20,7 @@ echo "Installing GNOME Shell and GDM..."
 sudo pacman -S --noconfirm gnome-shell gdm
 
 echo "Installing essential GNOME applications..."
-sudo pacman -S --noconfirm gnome-control-center gnome-shell-extension-appindicator nautilus
+sudo pacman -S --noconfirm gnome-control-center gnome-shell-extension-appindicator gnome-shell-extension-caffeine nautilus
 
 echo "Enabling GDM..."
 sudo systemctl enable gdm
