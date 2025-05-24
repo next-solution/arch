@@ -20,7 +20,7 @@ echo "Installing GNOME Shell and GDM..."
 sudo pacman -S --noconfirm gnome-shell gdm
 
 echo "Installing essential GNOME applications..."
-sudo pacman -S --noconfirm gnome-control-center gnome-shell-extension-appindicator gnome-shell-extension-caffeine nautilus
+sudo pacman -S --noconfirm gnome-control-center gnome-shell-extension-appindicator gnome-shell-extension-caffeine nautilus file-roller
 
 echo "Enabling GDM..."
 sudo systemctl enable gdm
@@ -31,7 +31,7 @@ sudo mkdir /etc/samba
 sudo touch /etc/samba/smb.conf
 
 echo "📦 Installing Tools..."
-sudo pacman -S --noconfirm zsh unrar
+sudo pacman -S --noconfirm zsh unrar 
 
 echo "Installing fonts..."
 sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
