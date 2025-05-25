@@ -1,0 +1,86 @@
+{
+    "archinstall-language": "English",
+    "audio_config": {
+        "audio": "pipewire"
+    },
+    "bootloader": "Grub",
+    "custom_commands": [],
+    "hostname": "linux",
+    "kernels": [
+        "linux"
+    ],
+    "locale_config": {
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "us_US"
+    },
+    "mirror_config": {
+        "custom_repositories": [],
+        "custom_servers": [],
+        "mirror_regions": {
+            "Poland": [
+                "http://arch.midov.pl/arch/$repo/os/$arch",
+                "https://arch.midov.pl/arch/$repo/os/$arch",
+                "http://ftp.icm.edu.pl/pub/Linux/dist/archlinux/$repo/os/$arch",
+                "https://ftp.icm.edu.pl/pub/Linux/dist/archlinux/$repo/os/$arch",
+                "http://mirror.juniorjpdj.pl/archlinux/$repo/os/$arch",
+                "https://mirror.juniorjpdj.pl/archlinux/$repo/os/$arch",
+                "http://ftp.psnc.pl/linux/archlinux/$repo/os/$arch",
+                "https://ftp.psnc.pl/linux/archlinux/$repo/os/$arch",
+                "http://arch.sakamoto.pl/$repo/os/$arch",
+                "https://arch.sakamoto.pl/$repo/os/$arch",
+                "https://mirror.przekichane.pl/archlinux/$repo/os/$arch"
+            ]
+        },
+        "optional_repositories": [
+            "multilib"
+        ]
+    },
+    "network_config": {
+        "type": "nm"
+    },
+    "ntp": true,
+    "parallel_downloads": 0,
+    "profile_config": {
+        "gfx_driver": "AMD / ATI (open-source)",
+        "greeter": null,
+        "profile": {
+            "custom_settings": {},
+            "details": [],
+            "main": "Xorg"
+        }
+    },
+    "services": [],
+    "swap": true,
+    "timezone": "Europe/Warsaw",
+    "version": null,
+        "packages": [
+        "base-devel",
+        "git",
+        "snapper",
+        "btrfs-progs",
+        "snap-pac",
+        "gnome-shell",
+        "gdm",
+        "gnome-control-center",
+        "gnome-shell-extension-appindicator",
+        "gnome-shell-extension-caffeine", 
+        "nautilus",
+        "file-roller",
+        "samba", 
+        "gvfs-smb",
+        "zsh",
+        "p7zip",
+        "noto-fonts",
+        "noto-fonts-cjk",
+        "noto-fonts-emoji",
+        "noto-fonts-extra",
+        "ttf-firacode-nerd",
+        "ttf-jetbrains-mono-nerd",
+        "ttf-hack-nerd",
+        "ttf-dejavu-nerd",
+        "ttf-cascadia-code-nerd",
+        "ttf-ubuntu-mono-nerd",
+        "wezterm"
+    ]
+}
