@@ -3,6 +3,8 @@
 echo "Enabling GDM..."
 sudo systemctl enable gdm
 
+systemctl enable bluetooth
+
 echo "Configuring Samba"
 sudo mkdir /etc/samba
 sudo touch /etc/samba/smb.conf
