@@ -57,6 +57,7 @@
         "packages": [
         "base-devel",
         "git",
+        "nvim",
         "snapper",
         "btrfs-progs",
         "snap-pac",
