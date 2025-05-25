@@ -12,7 +12,7 @@
     "locale_config": {
         "kb_layout": "us",
         "sys_enc": "UTF-8",
-        "sys_lang": "us_US"
+        "sys_lang": "us_US.UTF-8"
     },
     "mirror_config": {
         "custom_repositories": [],
@@ -40,7 +40,7 @@
         "type": "nm"
     },
     "ntp": true,
-    "parallel_downloads": 0,
+    "parallel_downloads": 5,
     "profile_config": {
         "gfx_driver": "AMD / ATI (open-source)",
         "greeter": null,
