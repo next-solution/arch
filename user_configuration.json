@@ -81,6 +81,8 @@
         "ttf-dejavu-nerd",
         "ttf-cascadia-code-nerd",
         "ttf-ubuntu-mono-nerd",
-        "wezterm"
+        "wezterm",
+        "bluez",
+        "bluez-utils"
     ]
 }
