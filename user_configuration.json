@@ -61,6 +61,7 @@
         "snapper",
         "btrfs-progs",
         "snap-pac",
+        "fastfetch",
         "gnome-shell",
         "gdm",
         "gnome-control-center",
